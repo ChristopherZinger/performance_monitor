@@ -6,6 +6,33 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+altgraph = "==0.17"
+auto-py-to-exe = "==2.6.6"
+bottle = "==0.12.18"
+bottle-websocket = "==0.2.9"
+cffi = "==1.14.0"
+future = "==0.18.2"
+gevent = "==20.5.0"
+gevent-websocket = "==0.10.1"
+greenlet = "==0.4.15"
+numpy = "==1.18.4"
+pandas = "==1.0.3"
+pefile = "==2019.4.18"
+psutil = "==5.7.0"
+pycparser = "==2.20"
+pynput = "==1.6.8"
+python-dateutil = "==2.8.1"
+pytz = "==2020.1"
+pywin32 = "==227"
+pywin32-ctypes = "==0.2.0"
+six = "==1.14.0"
+whichcraft = "==0.6.1"
+Eel = "==0.11.0"
+PyGetWindow = "==0.0.8"
+PyInstaller = "==3.6"
+PyRect = "==0.1.4"
+SQLAlchemy = "==1.3.16"
+"subprocess.run" = "==0.0.8"
 
 [requires]
 python_version = "3.8"

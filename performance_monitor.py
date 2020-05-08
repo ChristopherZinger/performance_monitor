@@ -17,7 +17,7 @@ class Manager:
         self.events = []
         self.processes = []
         self.active_window = None
-        self.debug_mode = True
+        self.debug_mode = False
 
     def append_events(self, item):
         self.events.append(item)
@@ -95,11 +95,14 @@ def main():
     #create manager class instanve
     manager = Manager()
     # Collect events - mouse
-    with mouse.Listener(on_click=manager.on_click) as listener:
-        # Collect events - key
-        with keyboard.Listener(
-                on_press=manager.on_press) as listener:
-            listener.join()
+    try:
+        with mouse.Listener(on_click=manager.on_click) as listener:
+            # Collect events - key
+            with keyboard.Listener(
+                    on_press=manager.on_press) as listener:
+                listener.join()
+    except Exception as e:
+        print(e)
 
 
 
